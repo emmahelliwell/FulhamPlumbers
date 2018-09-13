@@ -48,46 +48,37 @@
     <div class="service-container">
 
       <h1>About Us</h1>
-      <p class="a-service-text">Lorem ipsum dolor sit amet, consectetur
-         adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam,
-           quis nostrud exercitation ullamco laboris nisi ut aliquip
-           ex ea commodo consequat. Duis aute irure dolor in
-           reprehenderit in voluptate velit esse cillum dolore eu
-           fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-           proident, sunt in culpa qui officia deserunt mollit anim id
-           est laborum.</p>
-           <p class="a-service-text">Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut
-               labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.</p>
-                <p class="a-service-text">Lorem ipsum dolor sit amet, consectetur
-                   adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam,
-                     quis nostrud exercitation ullamco laboris nisi ut aliquip
-                     ex ea commodo consequat.</p>
+      <p class="a-service-text">Fulham Plumbers CO are a fully qualified
+        Gas Safe Registered
+        plumbing and heating company based in Fulham,
+        South-West London, who believe firmly in exceptional levels of
+        customer service.</p>
+
+           <p class="a-service-text">Reputation is essential to us;
+             we take immaculate care and attention to detail
+             on all our callouts and our team is polite,
+             punctual and professional.</p>
+
+                <p class="a-service-text">Fulham Plumbers CO provide and
+                  specialise in services for all sorts of
+                  domestic plumbing and heating requirements.</p>
       </div>
+
+
+
 
 
     <div class="about-container a-about-container">
       <div class="about-text a-about-text">
         <h1>What makes us different</h1>
         <p><i class="fa fa-check fa-3x"></i>
-          Lorem ipsum is placeholder text commonly used in
-           the graphic, print.</p>
+          Fully qualified team of Gas safe engineers</p>
             <br>
             <p><i class="fa fa-check fa-3x"></i>
-              Lorem ipsum is placeholder text commonly used in
-               the graphic, print.</p>
+              Which recommended traders</p>
                 <br>
                 <p><i class="fa fa-check fa-3x"></i>
-                  Lorem ipsum is placeholder text commonly used in
-                   the graphic, print.</p>
+                  Ready for any type of call out</p>
                     <br>
       </div>
     </div>
@@ -95,18 +86,26 @@
     <div class="m-about-text">
       <h1>What makes us different</h1>
       <p><i class="fa fa-check fa-3x"></i>
-        Lorem ipsum is placeholder text commonly used in
-         the graphic, print.</p>
+        Fully qualified team of Gas safe engineers</p>
           <br>
           <p><i class="fa fa-check fa-3x"></i>
-            Lorem ipsum is placeholder text commonly used in
-             the graphic, print.</p>
+            Which recommended traders</p>
               <br>
               <p><i class="fa fa-check fa-3x"></i>
-                Lorem ipsum is placeholder text commonly used in
-                 the graphic, print.</p>
+                Ready for any type of call out</p>
                   <br>
     </div>
+
+
+
+
+    <div class="logos">
+      <img src="./resources/images/logos/Gas_Safe.png"/>
+      <img src="./resources/images/logos/checkatrade.png"/>
+      <img src="./resources/images/logos/Which.jpg"/>
+    </div>
+
+
 
 
 
@@ -184,6 +183,22 @@
 
 
 
+    <div id="map" style="width:100%;height:400px;"></div>
+
+    <script>
+    function myMap() {
+      var mapCanvas = document.getElementById("map");
+      var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+      };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <!--
+    Need an API Key!
+    -->
 
 
 
