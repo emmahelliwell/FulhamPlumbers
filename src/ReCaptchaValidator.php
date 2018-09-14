@@ -1,6 +1,10 @@
 <?php
 namespace FormGuide\Handlx;
 
+$publickey = "6LeuQHAUAAAAAPAEa87-WhVUq3MPioTbvb-jlBWP";
+$privatekey = "6LeuQHAUAAAAAJOpsXDF6JxLuKfAaiKdW01kjeUO";
+
+
 class ReCaptchaValidator
 {
 	private $enabled;
@@ -9,10 +13,10 @@ class ReCaptchaValidator
 	{
 		$this->enabled=false;
 	}
-	
+
 	public function isEnabled()
 	{
-		return $this->enabled;	
+		return $this->enabled;
 	}
 
 	public function enable($enable)
@@ -34,7 +38,7 @@ class ReCaptchaValidator
 
 		$captcha=$_POST['g-recaptcha-response'];
 
-		$url = 
+		$url =
 		'https://www.google.com/recaptcha/api/siteverify?secret='.$this->secret.'&response='.$captcha.'&remoteip='.$_SERVER['REMOTE_ADDR'];
 
 		$resp_raw = file_get_contents($url);
